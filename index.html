@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YamhaMotors</title>
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/yamahalogo.svg"
+    />
+    <!-- main-style -->
+    <link rel="stylesheet" href="Css/main.css" />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="./Assets/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.css"
+    />
+    <!-- scroll-libary -->
+    <link rel="stylesheet" href="Assets/aos-master/dist/aos.css" />
+    <!-- hover-libary -->
+    <link
+      rel="stylesheet"
+      href="./Assets/Hover-master/Hover-master/css/hover.css"
+    />
+  </head>
+  <body id="main">
+    <!-- header -->
+    <header class="header ">
+      <div class="header__container">
+        <nav class="header__nav">
+          <a class="header__nav__bar" href="#" onclick="openNav()"
+            ><i class="fas fa-bars"></i>
+            <span class="header__nav__bar__text">MENU</span>
+            <ul class="header__nav__bar__menu" id="mySidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                ><i class="fas fa-x"></i
+              ></a>
+
+              <li class="header__nav__bar__menu__sidenav">Home</li>
+              <li class="header__nav__bar__menu__sidenav"><a href="#product">R Models</a></li>
+              <li class="header__nav__bar__menu__sidenav">Dealers</li>
+              <li class="header__nav__bar__menu__sidenav">About</li>
+            </ul>
+          </a>
+        </nav>
+        <div class="header__logo">
+          <svg class="header__logo__img" viewBox="0 0 24 24">
+            <defs>
+            <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+              <stop offset="0%" stop-color="#1b3e90" />
+              <stop offset="100%" stop-color="rgb(187, 187, 187)" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="100" cy="70" rx="85" ry="55"  />
+            <path
+          
+              d="M12 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zm0 .57C18.315.57 23.43 5.685 23.43 12c0 6.31-5.115 11.43-11.43 11.43C5.69 23.43.57 18.314.57 12 .57 5.69 5.69.57 12 .57zm0 .234c-.1 0-.183.06-.218.147l-.492 1.551A9.523 9.523 0 002.475 12c0 1.48.337 2.885.94 4.136l-1.1 1.206a.241.241 0 00-.015.262.246.246 0 00.238.115l1.592-.353a9.52 9.52 0 007.87 4.16c3.27 0 6.16-1.652 7.874-4.16l1.592.353a.236.236 0 00.23-.123.234.234 0 00-.016-.262l-1.1-1.198A9.431 9.431 0 0021.526 12a9.523 9.523 0 00-8.815-9.498L12.218.947A.237.237 0 0012 .804zm-.003.25c.024 0 .048.02.056.043l1.02 3.354a1.2 1.2 0 00-.48.957c0 .389.19.734.48.952h-.004c.436.326.718.846.718 1.429v1.12l4.326-2.497.476.825-4.802 2.77v.965l.834.48 4.802-2.774.476.825-4.326 2.5.972.56c.508.294.818.798.882 1.338v-.004a1.193 1.193 0 001.655.953l2.393 2.56c.02.02.02.047.008.07-.016.025-.04.033-.068.029l-3.413-.794a1.193 1.193 0 00-1.65-.957l.003-.004c-.5.215-1.091.199-1.6-.095l-.968-.56v4.994h-.952v-5.545l-.834-.48-.833.48v5.545h-.953V15.1l-.972.555c-.508.294-1.1.31-1.6.096l.004.004a1.193 1.193 0 00-1.651.957l-3.413.793a.054.054 0 01-.063-.028c-.016-.02-.012-.047.008-.067l2.397-2.56c.333.143.73.135 1.067-.064.338-.194.544-.528.588-.889v.004c.063-.54.373-1.044.88-1.337l.97-.56-4.327-2.496.477-.826 4.802 2.774.833-.484v-.964l-4.802-2.77.476-.826 4.326 2.496V7.79c0-.583.282-1.103.719-1.429h-.004c.29-.214.476-.56.476-.952 0-.393-.19-.738-.48-.957l1.02-3.353c.008-.028.031-.044.051-.044zm.004 5.902a.833.833 0 00-.833.833v1.67L12 9.94l.833-.48V7.789a.833.833 0 00-.833-.833zm0 4.084l-.833.48v.964l.833.476.833-.48v-.96zm-2.62 1.516l-1.444.833a.833.833 0 00-.306 1.14.822.822 0 00.723.412.83.83 0 00.416-.111l1.445-.834v-.96zm5.243 0l-.833.48V14l1.445.834a.834.834 0 00.833-1.445z"
+            />
+          </svg>
+          <h1 class="yamaha__heading">YAMAHA</h1>
+        </div>
+        <div class="header__dealer">
+          <a href="#"><i class="fas fa-location-dot"></i> FIND A DEALER</a>
+        </div>
+      </div>
+    </header>
+    <!-- first-section -->
+    <section class="slide">
+      <video
+        autoplay
+        loop
+        muted
+        class="slide__video"
+        src="Video/VID_20250131_185616_571.mp4"
+      ></video>
+      <div class="parallelogram slide__box">
+        <img
+          class="slide__box__img"
+          src="img/yamahalogo.svg"
+          alt="yamahalogo"
+        />
+        <h3 class="m1">YAMAHA</h3>
+        <h3>R SERIES</h3>
+      </div>
+      <div class="scroll"><img src="img/scroll.gif" alt="scrollgif" /></div>
+      <div class="badge fade-in-left">
+        <img src="img/r1_r1m_badges.png" alt="r1bages" />
+      </div>
+      <div class="slide__line"></div>
+    </section>
+    <!-- second-section -->
+    <section class="shoptools row">
+      <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+        <i class="fa-regular fa-pen-to-square fs-1"></i>
+        <a class="fs-6" href="#">CURRENT OFFERS</a>
+      </div>
+
+      <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+        <i class="fa-solid fa-calculator fs-1"></i>
+        <a class="fs-6" href="#">PAYMENT CACULATOR</a>
+      </div>
+
+      <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+        <i class="fa-solid fa-cart-shopping fs-1"></i>
+        <a class="fs-6" href="#">SHOP NOW</a>
+      </div>
+
+      <div class="shoptools__box col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+        <i class="fas fa-location-dot fs-1"></i>
+        <a class="fs-6" href="#">FIND YOUR DEALER</a>
+      </div>
+    </section>
+      <!-- third-section -->
+    <section class="speed">
+      <h3 class="speed__heading" data-aos="fade-in">FEEL THE REAL SPEED</h3>
+      <img
+        data-aos="fade-in"
+        data-aos-duration="3000"
+        src="img/r1lights.jpg"
+        alt="r1light"
+      />
+      <h6 class="speed__heading">R1 AND R1M NEW MODEL</h6>
+    </section>
+    <div class="section__header d-none d-lg-block"><span><h3>46 LEGEND</h3></span></div>
+    <!-- 4th-section -->
+    <section class="legend">
+      <div class="legend__box">
+
+      <img class="legend__box__racer" data-aos="fade-down"  src="img/rossi2.jpg" alt="racer">
+        <img class="legend__box__character"data-aos="fade-in"  data-aos-offset="0" src="img/rossi-valentino.png" alt="rossi">
+        <div class="legend__box__caption"data-aos="fade-right" >
+        <h2>VALENTINO ROSSI</h2>
+        <p>Valentino Rossi is an Italian racing driver, former professional motorcycle road racer and nine-time Grand Prix motorcycle racing World Champion. Of Rossi's nine Grand Prix World Championships, seven were in the premier 500cc/MotoGP class</p>
+      </div>
+    </div>
+
+    </section>
+     <!-- 5th-section -->
+    <div class="section__header"><span><h3>MODELS</h3></span></div>
+    <section class="product" id="product"  data-aos="fade-in">
+      <div class="product__card" data-aos="fade-right"
+      data-aos-duration="1500">
+        <div class="product__image"><img src="img/YZFR1MS.png" alt="R1M" /></div>
+
+       <div class="product__about"> <h4 class="product__card__model">YZF-R1M</h4>
+        <h5 class="bio">R HISTORY. YOUR FUTURE. WE R1.</h5>
+        <p class="bio">
+          Featuring iconic R‑Series styling, sophisticated electronic controls,
+          Supersport braking and suspension performance, and the world-renowned
+          crossplane CP4 engine.
+        </p>
+        <span class="price">$27,699</span>
+        <a class="product__card__btn hvr-sweep-to-right" href="./product.html">EXPLORE</a></div>
+      </div>
+      <div class="product__card" data-aos="fade-up"
+      data-aos-duration="1500" >
+       <div class="product__image"> <img src="img/YZFR1S1L.png" alt="R1" /></div>
+        <div class="product__about"> <h4 class="product__card__model">YZF-R1</h4>
+            <h5 class="bio">R HISTORY. YOUR FUTURE. WE R1.</h5>
+            <p class="bio">
+              Featuring iconic R‑Series styling, sophisticated electronic controls,
+              Supersport braking and suspension performance, and the world-renowned
+              crossplane CP4 engine.
+            </p>
+            <span class="price">$18,999</span>
+            <a class="product__card__btn hvr-sweep-to-right" href="">EXPLORE</a></div>
+      </div>
+      <div class="product__card" data-aos="fade-down"
+      data-aos-duration="1500">
+        <div class="product__image"> <img src="img/yzfr7.png" alt="R7" /></div>
+        <div class="product__about"> <h4 class="product__card__model">YZF-R7</h4>
+            <h5 class="bio">WHERE R WORLD MEETS YOURS</h5>
+            <p class="bio">
+                A new generation Supersport with Yamaha's legendary styling combines an advanced CP2 engine with an ultra‑thin and lightweight chassis to provide torquey performance on both the track and the street.
+            </p>
+            <span class="price">$9,199</span>
+            <a class="product__card__btn hvr-sweep-to-right" href="">EXPLORE</a></div>
+
+      </div>
+      <div class="product__card" data-aos="fade-right"
+      data-aos-duration="1500">
+        <div class="product__image"><img src="img/yzfr3.png" alt="R3" /></div>
+        <div class="product__about"> <h4 class="product__card__model">YZF-R3</h4>
+            <h5 class="bio ">R WORLD IS CALLING</h5>
+            <p class="bio">
+                Legendary Yamaha Superbike styling, advanced twin cylinder engine and ultra‑light chassis—the perfect entry into R World.
+
+
+            </p>
+            <span class="price">$5,499</span>
+            <a class="product__card__btn hvr-sweep-to-right" href="">EXPLORE</a></div>
+      </div>
+    </section>
+       <!-- footer -->
+    <footer class="py-5 footer" data-aos="fade-in"
+    data-aos-duration="1500">
+        <div class="row justify-content-center">
+            <div class="foter__logo col-6 col-md-2 mb-3"><img src="img/yamaha_revs.svg" alt="yamahalogo"></div>
+          <div class="col-6 col-md-2 mb-3 ">
+        
+            <h5>SHOP</h5>
+            <ul class="nav flex-column">
+              <li class="mb-2"><a  class="nav-link p-0 text-mutedd smallTitle">Motorcycles - Road</a></li>
+              <li class="mb-2"><a  class="nav-link p-0 text-mutedd smallTitle">Motorcycles - Off Road</a></li>
+              <li class="mb-2"><a  class="nav-link p-0 text-mutedd smallTitle">ATVs</a></li>
+              <li class="mb-2"><a  class="nav-link p-0 text-mutedd smallTitle">Side-By-Sides</a></li>
+              <li class="mb-2"><a  class="nav-link p-0 text-mutedd smallTitle">Snowmobiles</a></li>
+                         
+                 
+          </div>
+    
+        
+    
+          <div class="col-6 col-md-2 mb-3  ">
+            <h5>CONNECT</h5>
+            <ul class="nav flex-column ">
+              <li class="mb-2"><a  class="nav-link p-0 text-mutedd smallTitle">Find a Dealer</a></li>
+              <li class="mb-2"><a  class="nav-link p-0 text-mutedd smallTitle">Contact A Dealer</a></li>
+              <li class="mb-2"><a  class="nav-link p-0 text-mutedd smallTitle" target="_blank">Owner Manuals</a></li>
+              <li class="mb-2"><a  class="nav-link p-0 text-mutedd smallTitle">Become a Dealer</a></li>
+              <li class="mb-2"><a  class="nav-link p-0 text-mutedd smallTitle">Progressive</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>   
+      </footer>
+<!-- bootstrap script -->
+    <script src="./Assets/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+<!-- header-script -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <script>
+    window.addEventListener('scroll', function() {
+      const element = document.querySelector('.header');
+      if (window.scrollY > 200) { 
+          element.classList.add('blur__filter');
+      } else {
+          element.classList.remove('blur__filter');
+      }
+  });
+  </script>
+      <script>
+        window.addEventListener('scroll', function() {
+          const element = document.querySelector('.header__logo__img');
+          if (window.scrollY > 200) {
+              element.classList.add('color_change');
+          } else {
+              element.classList.remove('color_change');
+          }
+      });
+      </script>
+            <script>
+              window.addEventListener('scroll', function() {
+                const element = document.querySelector('.yamaha__heading');
+                if (window.scrollY > 200) { 
+                    element.classList.add('d-none');
+                } else {
+                    element.classList.remove('d-none');
+                }
+            });
+            </script>
+            <!-- libary-script -->
+              <script src="./Assets/aos-master/dist/aos.js">
+
+              </script>
+              <script>
+                AOS.init();
+          
+                // You can also pass an optional settings object
+                // below listed default settings
+                AOS.init({
+                  // Global settings:
+                  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                  startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+                  initClassName: "aos-init", // class applied after initialization
+                  animatedClassName: "aos-animate", // class applied on animation
+                  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+          
+                  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                  offset: 120, // offset (in px) from the original trigger point
+                  delay: 0, // values from 0 to 3000, with step 50ms
+                  duration: 400, // values from 0 to 3000, with step 50ms
+                  easing: "ease", // default easing for AOS animations
+                  once: false, // whether animation should happen only once - while scrolling down
+                  mirror: false, // whether elements should animate out while scrolling past them
+                  anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+                });
+              </script>
+
+  </body>
+</html>
